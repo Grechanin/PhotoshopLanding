@@ -3,8 +3,8 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 0;
+  padding-bottom: 0;
   color: #5a5a5a;
 }
 
@@ -60,7 +60,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0 1rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -68,6 +68,19 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+}
+/* Custom styles for lists */
+.featurette-list {
+  list-style-image: url(../img/ok.jpg); /* Custom list item */ 
+}
+.featurette-list li {
+  margin-bottom: 1rem;
+}
+
+/* Footer
+------------------------- */
+.footer {
+  background-color: rgb(37,42,39);
 }
 
 
