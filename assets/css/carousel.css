@@ -8,6 +8,49 @@ body {
   color: #5a5a5a;
 }
 
+.container {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Customize position */
+.navbar {
+  padding: 1rem 0 0 0;
+  position: absolute;
+  z-index: 1;
+  min-width: 100%;
+  top: -20px;
+}
+.navbar-collapse {
+  top: -40px;
+  position: relative;
+}
+.navbar-nav {
+    margin-left: auto!important;
+}
+/* Customize liks font */
+.nav-link {
+  font-size: 22.63px;
+  color: #fff;
+  font-family: 'Times New Roman';
+  margin-right: 2rem;
+}
+.nav-link:hover {
+  color: #e9ecef;
+}
+/* Customize logo */
+.navbar-brand {
+  font-family:"Mrs Eaves";
+  font-size: 118.51px;
+  color: rgb(184,187,188);
+  font-style: italic;
+}
+.navbar-brand:hover {
+  color: rgb(184,187,188);
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -23,9 +66,12 @@ body {
 }
 
 /* Declare heights because of positioning of img element */
+.carousel {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100%;
+}
 .carousel-item {
   height: 32rem;
-  background: url(../img/bg.jpg);
 }
 .carousel-item > img {
   position: absolute;
@@ -36,7 +82,6 @@ body {
 .carousel-inner {
     position: relative;
     width: 100%;
-    overflow: visible;
 }
 
 /* MARKETING CONTENT
