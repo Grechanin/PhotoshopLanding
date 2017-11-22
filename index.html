@@ -18,14 +18,15 @@
   <body>
 
     <header>
-      <nav class="my-navbar navbar navbar-expand-md">
+      <div class="nav-background"></div>
+      <nav class="navbar navbar-expand-md">
        <div class="container">
         <a class="navbar-brand" href="#">Leo/-</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="my-navbar-nav navbar-nav">
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Solitions <span class="sr-only">(current)</span></a>
             </li>
@@ -40,21 +41,20 @@
             </li>
           </ul>
         </div>
+       </div>
       </nav>
-  	 </div>
     </header>
 
     <main role="main">
-
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="first-slide" src="assets/img/slide1.png" alt="First slide">
             <div class="container">
-              <div class="carousel-caption text-left">
+              <div class="carousel-caption first-caption-slide text-left">
                 <h1>Introducing</h1>
                 <p>Something hot.........</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Try demo</a></p>
+                <p><a class="btn btn-lg carousel-btn" href="#" role="button">Try demo</a></p>
               </div>
             </div>
           </div>
@@ -63,8 +63,8 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <p>Cras justo odio, dapibus ac facilisis in, m..</p>
+                <p><a class="btn btn-lg carousel-btn" href="#" role="button">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -73,18 +73,18 @@
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <p>Cras justo odio, dapibus ac facilisis in, egesta.</p>
+                <p><a class="btn btn-lg carousel-btn" href="#" role="button">Browse gallery</a></p>
               </div>
             </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon carousel-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon carousel-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -109,24 +109,26 @@
 
 		<!-- Tab panes -->
 		<div class="tab-content">
-		  <div class="tab-pane active tab-pane-border container" id="home" role="tabpanel" aria-labelledby="home-tab">
-			<h3>Lorem Ipsum is simply dummy text</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>
-			It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-		  </div>
-		  <div class="tab-pane tab-pane-border container text-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+		  <div class="tab-pane active tab-pane-border container text-center" id="home" role="tabpanel" aria-labelledby="home-tab">
 		  	<img src="assets/img/ipad2.png" class="img-fluid">
 			<h3 class="text-left">Lorem Ipsum is simply dummy text</h3>
 			<p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>
 			It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		  </div>
-		  <div class="tab-pane tab-pane-border container" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-			<h3>Lorem Ipsum is simply dummy text</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>
+		  <div class="tab-pane tab-pane-border container text-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+		  	<img src="assets/img/dummy img.png" class="img-fluid">
+			<h3 class="text-left">Lorem Ipsum is simply dummy text</h3>
+			<p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>
+			It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		  </div>
+		  <div class="tab-pane tab-pane-border container text-center" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+		  	<img src="assets/img/ipad2.png" class="img-fluid">
+			<h3 class="text-left">Lorem Ipsum is simply dummy text</h3>
+			<p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>
 			It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		  </div>
 		  <div class="tab-pane tab-pane-border container text-center" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-		  	<img src="assets/img/ipad2.png" class="img-fluid">
+		  	<img src="assets/img/dummy img.png" class="img-fluid">
 			<h3 class="text-left">Lorem Ipsum is simply dummy text</h3>
 			<p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>
 			It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -154,34 +156,35 @@
           <hr class="featurette-divider">
 
           <!-- Forms-->
-          <div class="row">
-            <div class="col-md-6 member-login-form">
-              <h4>Member Login</h4>
-          	  <form class="form-inline">
+          <div class="row forms">
+            <div class="col-md-6">
+          	  <form class="form-inline member-login-form">
+          	  	<legend>Member Login</legend>
 				<div class="form-group">
 				  <label class="sr-only" for="UserName">User name</label>
-				  <input type="text" class="form-control" id="UserName" placeholder="User name">
+				  <input type="text" class="form-control member-login-input" id="UserName" placeholder="User name">
 				</div>
 				<div class="form-group">
 				  <label class="sr-only" for="Password">Password</label>
-				  <input type="password" class="form-control" id="Password" placeholder="Password">
+				  <input type="password" class="form-control member-login-input" id="Password" placeholder="Password">
 				</div>
 				<div class="checkbox sr-only">
 				  <label>
 				    <input type="checkbox"> Remember me
 				  </label>
 				</div>
-				<button type="submit" class="btn btn-default">Log me in</button>
+				<button type="submit" class="btn btn-default member-login-btn">Log me in</button>
 			  </form>
           	</div>
 
           	<div class="col-md-6">
-          	  <form class="form-inline">
+          	  <form class="form-inline subscribe-form">
+          	  	<legend>Subscribe to our weekly newsletter</legend>
 				<div class="form-group">
 				  <label class="sr-only" for="Email address">Email address</label>
-				  <input type="text" class="form-control" id="Email address" placeholder="Email address">
+				  <input type="text" class="form-control subscribe-input" id="Email address" placeholder="Email address">
 				</div>
-				<button type="submit" class="btn btn-default">Subscribe</button>
+				<button type="submit" class="btn btn-default subscribe-btn">Subscribe</button>
 			  </form>
           	</div>
           </div>      
@@ -189,41 +192,65 @@
 	   </div><!-- /.container -->
 
 		<!-- FOOTER -->
-	    <footer class="footer container">
-	      <div class="row">
-	      	<div class="col-md-2">
-	      		<h3>About us</h3>
-	      		<ul>
-	      			<li>About us</li>
-	      			<li>Why us</li>
-	      			<li>Customer Stories</li>
-	      			<li>Press Sesources</li>
-	      			<li>Press Releases</li>
-	      			<li>Contact us</li>
-	      		</ul>
-	      	</div>
-	      	<div class="col-md-2">
-	      		<h3>About us</h3>
-	      		<ul>
-	      			<li>About us</li>
-	      			<li>Why us</li>
-	      			<li>Customer Stories</li>
-	      			<li>Press Sesources</li>
-	      			<li>Press Releases</li>
-	      			<li>Contact us</li>
-	      		</ul>
-	      	</div>
-	      	<div class="col-md-5">
-	          <h3>Testimonials</h3>
-	      	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr standard dummy text ever since the 1500s, when an unknown printer took a</p>
-	      	  <a href="#">Lorem Ipsum is simply</a><br>
-	      	  <a href="#">Owner, Lorem Ipsum</a>
-	      	</div>
-	      	<div class="col-md-3">
-	      	  <img src="assets/img/logo.png">
-	      	  <p>&copy; 2017 Company, Inc. &middot;</p>
-	      	</div>
-	      </div>
+	    <footer class="footer">
+	        <div class="container">
+		      <div class="row">
+		      	<div class="col-md-2">
+		      		<h3>About us</h3>
+		      		<ul>
+		      			<li>About us</li>
+		      			<li>Why us</li>
+		      			<li>Customer Stories</li>
+		      			<li>Press Sesources</li>
+		      			<li>Press Releases</li>
+		      			<li>Contact us</li>
+		      		</ul>
+		      	</div>
+		      	<div class="col-md-2">
+		      		<h3>About us</h3>
+		      		<ul>
+		      			<li>About us</li>
+		      			<li>Why us</li>
+		      			<li>Customer Stories</li>
+		      			<li>Press Sesources</li>
+		      			<li>Press Releases</li>
+		      			<li>Contact us</li>
+		      		</ul>
+		      	</div>
+		      	<div class="col-md-4">
+		          <h3>Testimonials</h3>
+
+		          <div id="footer-carousel" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item footer-carousel-item active">
+					      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr standard dummy text ever since the 1500s, when an unknown printer took a</p>
+					    </div>
+					    <div class="carousel-item footer-carousel-item">
+					      <p>LLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis d</p>
+					    </div>
+					    <div class="carousel-item footer-carousel-item">
+					      <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vu</p>
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev footer-carousel-prev" href="#footer-carousel" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon footer-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next footer-carousel-next" href="#footer-carousel" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon footer-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+	      	  
+		      	  <a href="#">Lorem Ipsum is simply</a><br>
+		      	  <a href="#">Owner, Lorem Ipsum</a>
+		      	</div>
+		      	<div class="col-md-4 text-center">
+		      	  <img src="assets/img/logo.png" class="footer-logo">
+		      	  <p class="footer-rights">&copy; 2017 Company, Inc. &middot;</p>
+		      	</div>
+		      </div>
+		    </div>
 	    </footer>
 
 

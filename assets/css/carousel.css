@@ -22,8 +22,20 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+/* Customize navbar and carousel background */
+.nav-background {
+  position: absolute;
+  background: url(../img/bg.jpg) no-repeat;
+  height: 470px;
+  min-width: 100%;
+}
+@media (min-width: 1125px){
+  .nav-background {
+    background-size: 100%;
+  }
+}
 /* Customize position */
-.my-navbar {
+.navbar {
   padding: 1rem 0 0 0;
   position: absolute;
   z-index: 1;
@@ -34,17 +46,17 @@ body {
   top: -40px;
   position: relative;
 }
-.my-navbar-nav {
+.navbar-nav {
     margin-left: auto!important;
 }
-/* Customize navbar liks */
-.my-navbar-nav a {
+/* Customize liks font */
+.nav-link {
   font-size: 22.63px;
   color: #fff;
   font-family: 'Times New Roman';
   margin-right: 2rem;
 }
-.my-navbar-nav a:hover {
+.nav-link:hover {
   color: #e9ecef;
 }
 /* Customize logo */
@@ -65,24 +77,52 @@ body {
 .carousel {
   margin-bottom: 4rem;
 }
+.carousel-prev-icon {
+  background-image: url(../img/arrows/Arrowhead-Left-128.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.carousel-next-icon {
+  background-image: url(../img/arrows/Arrowhead-Right-48.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
-
-/* Declare heights because of positioning of img element */
-.carousel {
-  background: url(../img/bg.jpg) no-repeat;
-  background-size: 100%;
+.first-caption-slide {
+  padding-left: 460px;
 }
+.carousel-caption > h1 {
+  font-family: 'Segoe WP N';
+  font-size: 64.63px;
+
+}
+.carousel-caption > p {
+  font-family: 'Segoe WP N';
+  font-size: 44.63px;
+}
+.carousel-btn {
+  background-color: #296f4f;
+  border-radius: 0;
+  border-color: #296f4f;
+  color: #fff;
+}
+.carousel-btn:hover {
+  color: #e9ecef;
+}
+/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
 }
 .carousel-item > img {
   position: absolute;
-  top: 235px;
-  left: 100px;
+  top: 180px;
+  left: 190px;
 }
 
 .carousel-inner {
@@ -153,20 +193,117 @@ body {
 .featurette-list li> img{
   margin-right: 15px;
 }
-/* Forms
-------------------------- */
-.member-login-form {
-  background-color: rgb(230,118,36);
-  color: #fff;
-}
 
 /* Footer
 ------------------------- */
 .footer {
   background-color: rgb(37,42,39);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.footer h3 {
+  color: #fff;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Footer Forms
+------------------------- */
+.forms {
+  margin-bottom: 30px;
+  font-family: 'Segoe WP N';
+}
+.member-login-form {
+  background-color: rgb(230,118,36);
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  max-width: 475px;
+}
+.form-inline .member-login-input {
+  max-width: 155px;
+  margin-right: 10px;
+  border-radius: 0;
+}
+.subscribe-form {
+  background-color: rgb(1,212,243);
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  max-width: 475px;
+}
+.form-inline .subscribe-input {
+  width: 310px;
+  margin-right: 10px;
+  border-radius: 0;
+}
+.member-login-btn {
+  max-width: 100px;
+  border-radius: 0;
+  margin-left: auto;
+  background-color: #444444;
+  color: #fff;
+}
+.subscribe-form {
+  background-color: rgb(1,212,243);
+  color: #fff;
+}
+.subscribe-btn {
+  max-width: 100px;
+  border-radius: 0;
+  margin-left: auto;
+  background-color: #029bb1;
+  color: #fff;
+}
+/* CUSTOMIZE THE FOOTER CAROUSEL
+-------------------------------------------------- */
+
+#footer-carousel {
+  background-image: none;
+  margin-bottom:0;
+}
+.footer-carousel-item {
+  height: 6em;
+}
+.footer-carousel-prev {
+  position: absolute;
+  top: -39px;
+  left: 203px;
+  height: 2em;
+  width: 1.5em;
+}
+.footer-carousel-next {
+  position: absolute;
+  top: -39px;
+  left: 233px;
+  height: 2em;
+  width: 1.5em;
+
+}
+.footer-next-icon {
+  background-image: url(../img/arrows/Arrowhead-Right-01-24.png);
+  background-repeat: no-repeat;
+}
+.footer-prev-icon {
+  background-image: url(../img/arrows/Arrowhead-Left-01-24.png);
+  background-repeat: no-repeat;
 }
 
-
+.footer-logo {
+  position: absolute;
+  top: 35px;
+  left: 70px;
+}
+.footer-rights {
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
